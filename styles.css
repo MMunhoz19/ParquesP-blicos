@@ -1,0 +1,194 @@
+/* Estilo do header */
+header {
+    display: flex; /* Para organizar os itens em linha */
+    justify-content: space-between; /* Espaço entre o logo e o menu */
+    align-items: center; /* Alinha verticalmente no centro */
+    background-color: black; /* Cor de fundo */
+    padding: 10px 20px; /* Espaçamento interno */
+    box-shadow: 0 2px 5px rgba(251, 234, 234, 0.1); /* Sombra para destaque */
+}
+
+/* Estilo do logo */
+header img {
+    height: 40px; /* Ajusta o tamanho do logo */
+}
+
+/* Estilo do nav e links */
+nav {
+    display: flex; /* Links lado a lado */
+    gap: 15px; /* Espaço entre os links */
+}
+
+nav a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: white; /* Cor do texto */
+    font-size: 16px; /* Tamanho da fonte */
+    padding: 8px 12px; /* Espaçamento interno nos links */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+    /* Cor de fundo ao passar o mouse */
+nav a:hover {
+    background-color:lightgrey; /* Cor de fundo ao passar o mouse */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Organiza os itens em coluna */
+        align-items: flex-start; /* Alinha à esquerda */
+    }
+
+    nav {
+        flex-direction: column; /* Links em coluna */
+        gap: 10px; /* Ajusta o espaçamento */
+    }
+}
+/* Estilo para o conteúdo do footer */
+footer {
+    text-align: center;
+    margin-top: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+/* Estilo do cabeçalho */
+header {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+        /* Definindo a imagem de fundo para o banner */
+        .banner {
+            background-image: url('Imagens e vídeos/Home parque.png'); /* Caminho da imagem */
+            background-size: cover; /* A imagem de fundo cobrirá toda a área */
+            background-position: center; /* A imagem de fundo ficará centralizada */
+            height: 400px; /* Altura do banner */
+            position: relative;
+            z-index: 1; /* Necessário para posicionar o texto no banner */
+        }
+
+        .imagem-banner {
+            background-image:url('Imagens e vídeos/LogoMC.png');
+            z-index: 2;
+            position: relative; /* Posiciona a imagem em relação ao .banner */
+            top: 50%; /* Centraliza verticalmente */
+            left: 25%; /* Centraliza horizontalmente */
+            transform: translate(-50%, -50%); /* Ajusta o ponto de referência para o centro */
+            width: 300px; /* Largura da imagem */
+            height: 400px; /* Mantém a proporção da imagem */
+            background-size: contain; /* Ajusta a imagem sem cortar */
+            background-repeat: no-repeat; /* Evita repetição */
+            background-position: center; /* Centraliza a imagem no container */
+        }
+
+    /* Estilo para o texto sobre o banner */
+    .texto-banner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-20%, -50%); /* Centraliza o texto no banner */
+        color: white; /* Cor do texto */
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 1.5em;
+    }   
+.corpo-home-title {
+    background-color: black;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    color: #ffff00;
+    margin: 0;
+    padding: 0;
+}
+.corpo-home {
+    background-color: black;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    color: #ff00ff;
+  } 
+
+.Parques {
+    background-color: gray;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    color: #ffff00;
+ }
+ 
+/* Estilo do container do carrossel */
+.carousel {
+    position: relative;
+    width: 100%; /* Ajuste conforme necessário */
+    max-width: 400px; /* Largura máxima */
+    height: 400px; /* Altura fixa */
+    overflow: hidden; /* Esconde as imagens fora do container */
+    margin: auto; /* Centraliza o carrossel */
+    background-color: black;
+}
+
+/* Estilo para as imagens no carrossel */
+.carousel-inner {
+    display: flex; /* Exibe as imagens em linha */
+    width: 80%; /* Dobra o tamanho para incluir todas as imagens */
+    animation: slide 10s infinite; /* Controla a animação */
+}
+
+.carousel-inner img {
+    width: 100%; /* Cada imagem ocupa 100% do container */
+    height: auto; /* Ajusta proporcionalmente */
+}
+
+/* Animação para o efeito de deslizamento */
+@keyframes slide {
+    0% {
+        transform: translateX(0); /* Primeira imagem visível */
+    }
+    50% {
+        transform: translateX(-100%); /* Segunda imagem visível */
+    }
+    100% {
+        transform: translateX(0); /* Retorna à primeira imagem */
+    }
+}
+
+html, body {
+    background-color: black; /* Define o fundo como preto */
+    height: 100%; /* Garante que o fundo cubra toda a altura da página */
+    margin: 0; /* Remove margens do body */
+    padding: 0; /* Remove preenchimentos do body */
+}
+
+.banner-parque {
+    background-image: url('Imagens e vídeos/Banner parques.png'); /* Caminho da imagem */
+    background-size: cover; /* A imagem de fundo cobrirá toda a área */
+    background-position: center; /* A imagem de fundo ficará centralizada */
+    height: 400px; /* Altura do banner */
+    position: relative;
+    z-index: 1; /* Necessário para posicionar o texto no banner */
+}
+
+/* Estilo para o texto sobre o banner */
+.texto-banner-parque {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-20%, -50%); /* Centraliza o texto no banner */
+    color: white; /* Cor do texto */
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3em;
+}
+
+.corpo-parques-title {
+    background-color: black;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    color: #ffff00;
+  } 
+
+
